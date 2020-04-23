@@ -10,8 +10,13 @@ public class Smileyface {
         private String eyes;
 
         public SmileyFaceBuilder eyes(String eyes){
+            checkEyes(eyes);
             this.eyes = eyes;
             return this;
+        }
+
+        private void checkEyes(String eyes) {
+            if (!eyes.equals(":") && !eyes.equals(";")) throw new InvalidEyesException();
         }
 
         public Smileyface build() {

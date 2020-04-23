@@ -12,6 +12,7 @@ public class SmileyfaceShould {
 
   @Test
   public void not_allow_building_with_invalid_eyes() {
+
      Assertions.assertThrows(InvalidEyesException.class, ()-> new Smileyface.SmileyFaceBuilder()
      .eyes("X")
      .build());
