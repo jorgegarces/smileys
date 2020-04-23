@@ -17,4 +17,13 @@ public class SmileyfaceShould {
      .eyes("X")
      .build());
   }
+
+  @Test
+  public void not_allow_building_with_invalid_nose() {
+
+    Assertions.assertThrows(InvalidNoseException.class, ()-> new Smileyface.SmileyFaceBuilder()
+            .eyes(":")
+            .nose("@")
+            .build());
+  }
 }

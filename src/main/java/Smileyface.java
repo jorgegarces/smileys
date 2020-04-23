@@ -19,9 +19,14 @@ public class Smileyface {
             if (!eyes.equals(":") && !eyes.equals(";")) throw new InvalidEyesException();
         }
 
+        public SmileyFaceBuilder nose(String nose) {
+            return null;
+        }
+
         public Smileyface build() {
             if(this.eyes == null) throw new MissingEyesException();
             return new Smileyface(this);
         }
+
     }
 }
