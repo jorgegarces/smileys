@@ -6,7 +6,8 @@ public class SmileyfaceShould {
    @Test
     public void not_allow_building_without_eyes() {
 
-       Assertions.assertThrows(MissingEyesException.class, ()-> new Smileyface.SmileyfaceBbuilder()
+       Assertions.assertThrows(MissingEyesException.class, ()-> new Smileyface.SmileyFaceBuilder()
                .build());
     }
+
 }

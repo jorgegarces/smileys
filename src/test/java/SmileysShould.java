@@ -1,5 +1,4 @@
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +7,8 @@ public class SmileysShould {
 
     @Test
     public void test() {
-
-       /* Smileys smileys = new Smileys();
+/*
+       Smileys smileys = new Smileys();
 
         List<String> a = new ArrayList<String>();
         a.add(":)");
